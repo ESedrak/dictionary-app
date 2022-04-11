@@ -3,14 +3,14 @@ import React, { useState } from "react";
 export default function Dictionary() {
   const [keyword, setKeyword] = useState(null);
 
-  function handleSearch(event) {
-    event.preventDefault();
+  const handleSearch = (e) => {
+    e.preventDefault();
     alert(`Searching for the word ${keyword}`);
-  }
+  };
 
-  function keywordChange(event) {
-    setKeyword(event.target.value);
-  }
+  const keywordChange = (e) => {
+    setKeyword(e.target.value);
+  };
 
   return (
     <form onSubmit={handleSearch}>
