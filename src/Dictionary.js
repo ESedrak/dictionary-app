@@ -26,7 +26,7 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <section className="searchBar">
+      <spam className="searchBar">
         <form onSubmit={handleSearch}>
           <input
             type="search"
@@ -34,7 +34,7 @@ export default function Dictionary() {
             placeholder="🔍Search"
           ></input>
         </form>
-      </section>
+      </spam>
       <Results results={results} />
     </div>
   );
