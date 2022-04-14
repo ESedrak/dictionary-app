@@ -6,6 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
 
+// Components should be followed as below (helps understand the structure of the app)
+// 1. App
+// 2.Dictionary
+// 3.Results
+// 4. Both Phonetics and Meaning
+// 5. Footer
+
 ReactDOM.render(
   <React.StrictMode>
     <Container>
