@@ -6,9 +6,14 @@ export default function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Dictionary />
+        <h1>Dictionary App</h1>
       </header>
-      <Footer />
+      <main>
+        <Dictionary />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
