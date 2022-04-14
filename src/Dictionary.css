@@ -10,16 +10,16 @@
   transition: 2s;
 }
 
-.Dictionary input {
-  margin: 0 auto;
-  margin-bottom: 10px;
-  display: block;
-  border-radius: 30px;
-  max-width: 100%;
+.Dictionary .searchBar {
   text-align: center;
+  padding: 20px;
 }
 
 .Dictionary section:hover {
   background-color: blue;
   transform: scale(1.1);
+}
+
+.Dictionary input {
+  line-height: 30px;
 }

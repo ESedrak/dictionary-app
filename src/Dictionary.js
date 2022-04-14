@@ -28,11 +28,20 @@ export default function Dictionary() {
     <div className="Dictionary">
       <spam className="searchBar">
         <form onSubmit={handleSearch}>
-          <input
-            type="search"
-            onChange={keywordChange}
-            placeholder="🔍Search"
-          ></input>
+          <span>
+            <input
+              type="search"
+              onChange={keywordChange}
+              placeholder="Search for a word  "
+            ></input>
+            <button
+              type="button"
+              className="btn btn-dark"
+              onClick={handleSearch}
+            >
+              🔍
+            </button>
+          </span>
         </form>
       </spam>
       <Results results={results} />
