@@ -8,8 +8,6 @@ export default function Dictionary() {
   const [results, setResults] = useState(null);
 
   const handleKeywordSearch = (response) => {
-    // console.log(response.data[0]);
-    // console.log(response.data[0].meanings[0].definitions[0].definition);
     setResults(response.data[0]);
   };
 
@@ -26,25 +24,20 @@ export default function Dictionary() {
 
   return (
     <div className="Dictionary">
-      <spam className="searchBar">
-        <form onSubmit={handleSearch}>
-          <span>
-            <input
-              type="search"
-              onChange={keywordChange}
-              placeholder="Search for a word  "
-            ></input>
-            <button
-              type="button"
-              className="btn btn-dark"
-              onClick={handleSearch}
-            >
-              🔍
-            </button>
-          </span>
-        </form>
-      </spam>
+      <form onSubmit={handleSearch}>
+        <span className="searchBar">
+          <input
+            type="search"
+            onChange={keywordChange}
+            placeholder="Search for a word  "
+          ></input>
+          <button type="button" className="btn btn-dark" onClick={handleSearch}>
+            🔍
+          </button>
+        </span>
+      </form>
       <Results results={results} />
+      {/* Sending the results from (response.data[0]) to it's own component */}
     </div>
   );
 }
