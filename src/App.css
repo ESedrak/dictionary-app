@@ -1,13 +1,10 @@
 .App {
   max-width: 100%;
-  background: black;
+  background-color: lightgrey;
+  border-radius: 10px;
 }
 
 .App-header {
   text-align: center;
   margin-top: 20px;
-}
-
-body {
-  background: black;
 }
