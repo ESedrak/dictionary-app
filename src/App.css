@@ -2,6 +2,7 @@
   max-width: 100%;
   background-color: rgb(94, 90, 90);
   border-radius: 10px;
+  height: auto;
 }
 
 .App-header {
