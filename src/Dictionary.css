@@ -8,6 +8,7 @@
   color: white;
   width: 85%;
   transition: 2s;
+  line-height: 17px;
 }
 
 .Dictionary .searchBar {
@@ -25,4 +26,22 @@
 
 .Dictionary input {
   line-height: 30px;
+}
+
+.Meaning .example {
+  font-size: 14px;
+}
+
+.Meaning .partOfSpeech {
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.Results .wordSearched {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.Phonetics a {
+  float: right;
 }

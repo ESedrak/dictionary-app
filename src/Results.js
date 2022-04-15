@@ -8,7 +8,7 @@ export default function Results(props) {
     return (
       <div className="Results">
         <section>
-          <h2>{props.results.word}</h2>
+          <h2 className="wordSearched">{props.results.word}</h2>
           {/* Had to filter phonetics as there was empty strings showing up which uploaded the original site again */}
           {props.results.phonetics
             .filter((phonetic) => {
