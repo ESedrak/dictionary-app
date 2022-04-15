@@ -20,6 +20,7 @@
   background-color: rgb(18, 17, 17);
   transform: scale(1.1);
   color: rgb(255, 207, 215);
+  box-shadow: 10px 20px 40px black;
 }
 
 .Dictionary input {

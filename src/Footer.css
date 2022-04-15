@@ -1,7 +1,11 @@
-.Footer {
+.Footer a {
+  text-decoration-line: none;
+  color: white;
+  display: block;
   text-align: center;
+  font-size: 10px;
 }
 
-a {
-  text-decoration-line: none;
+.Footer a:hover {
+  color: black;
 }
