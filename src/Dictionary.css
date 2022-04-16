@@ -2,6 +2,7 @@
   line-height: 33px;
   position: relative;
   top: 2px;
+  width: auto;
 }
 
 .Dictionary .searchBar {
@@ -12,7 +13,7 @@
 }
 
 .Dictionary section {
-  background-color: rgb(52, 52, 52);
+  background-color: #1a1a1c;
   margin: 0 auto;
   margin-bottom: 50px;
   border-radius: 10px;
@@ -26,7 +27,7 @@
 }
 
 .Dictionary section:hover {
-  background-color: rgb(18, 17, 17);
+  background-color: black;
   transform: scale(1.1);
   color: rgb(255, 207, 215);
   box-shadow: 10px 20px 40px black;
