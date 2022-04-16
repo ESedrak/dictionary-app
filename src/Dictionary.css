@@ -1,5 +1,18 @@
+.Dictionary input {
+  line-height: 33px;
+  position: relative;
+  top: 2px;
+}
+
+.Dictionary .searchBar {
+  text-align: center;
+  padding: 19px;
+  display: block;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 .Dictionary section {
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(52, 52, 52);
   margin: 0 auto;
   margin-bottom: 50px;
   border-radius: 10px;
@@ -9,12 +22,7 @@
   width: 85%;
   transition: 2s;
   line-height: 17px;
-}
-
-.Dictionary .searchBar {
-  text-align: center;
-  padding: 20px;
-  display: block;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .Dictionary section:hover {
@@ -24,8 +32,8 @@
   box-shadow: 10px 20px 40px black;
 }
 
-.Dictionary input {
-  line-height: 30px;
+.Meaning .definition {
+  font-size: 17px;
 }
 
 .Meaning .example {
@@ -33,15 +41,16 @@
 }
 
 .Meaning .partOfSpeech {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   text-transform: capitalize;
+}
+
+.Phonetics .audio {
+  display: block;
+  text-align: right;
 }
 
 .Results .wordSearched {
   text-transform: capitalize;
   text-align: center;
-}
-
-.Phonetics a {
-  float: right;
 }

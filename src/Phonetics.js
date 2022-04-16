@@ -1,13 +1,20 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import ReactAudioPlayer from "react-audio-player";
+import PlayAudio from "react-simple-audio-player";
+import chroma from "chroma-js";
 
 export default function Phonetics(props) {
-  // console.log(props.phonetic.audio) to show data audio/text;
+  // console.log(props.phonetic) to show data audio/text;
+  const colorScale = chroma.scale(["#565a63", "#ffffff"]).mode("lch").colors(5);
+  //imported a simple audio player - can change color via chroma.scale
   return (
     <Row className="Phonetics">
-      <Col>
-        <ReactAudioPlayer src={props.phonetic.audio} volume controls />
+      <Col className="audio">
+        <PlayAudio
+          url={props.phonetic.audio}
+          colorScale={colorScale}
+          width="30px"
+        />
       </Col>
       <Col>{props.phonetic.text}</Col>
     </Row>
