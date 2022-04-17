@@ -2,26 +2,44 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
+import Photos from "./Photos";
 
 export default function Dictionary() {
   const [keyword, setKeyword] = useState(null);
   const [results, setResults] = useState(null);
+  const [photo, setPhoto] = useState(null);
 
   const handleKeywordSearch = (response) => {
-    setResults(response.data[0]);
     // Receiving the data from the dictionary API
+    setResults(response.data[0]);
+  };
+
+  const handlePhotos = (response) => {
+    // Receiving the data from the pexel photos
+    // console.log(response.data.photos);
+    setPhoto(response.data.photos);
   };
 
   const handleSearch = (e) => {
     e.preventDefault();
 
-    let apiKey = ` https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(apiKey).then(handleKeywordSearch);
+    const apiUrlDictionary = ` https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiUrlDictionary).then(handleKeywordSearch);
+
+    const apiKeyPhotos =
+      "563492ad6f917000010000016cea332a7bd443d7b79039d1069a6ad3";
+    const apiUrlPhotos = `https://api.pexels.com/v1/search?query=${keyword}`;
+
+    // // Authorisation using : const headers = { Authorization: `Bearer ${token}` };
+    // axios.get(URLConstants.USER_URL, { headers });
+
+    const headers = { Authorization: `Bearer ${apiKeyPhotos}` };
+    axios.get(apiUrlPhotos, { headers }).then(handlePhotos);
   };
 
   const keywordChange = (e) => {
-    setKeyword(e.target.value);
     // The input given to the searchBar is stored here
+    setKeyword(e.target.value);
   };
 
   return (
@@ -45,7 +63,7 @@ export default function Dictionary() {
         </form>
       </section>
       <Results results={results} />
-      {/* Sending the results from (response.data[0]) to it's own component  - can console.log to look at the data*/}
+      <Photos photo={photo} />
     </div>
   );
 }

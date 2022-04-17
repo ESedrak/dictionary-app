@@ -39,6 +39,7 @@
 
 .Meaning .example {
   font-size: 14px;
+  opacity: 0.7;
 }
 
 .Meaning .partOfSpeech {
