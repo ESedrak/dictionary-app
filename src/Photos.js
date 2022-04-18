@@ -2,13 +2,14 @@ import React from "react";
 
 export default function Photos(props) {
   // console log props.photos for the data
-  console.log(props.photo.src.small);
+  console.log(props.photo[0].src.small);
   if (props.photo) {
     return (
       <div className="Photos">
-        {props.photo.src.small.map(function (photo, index) {
+        <p>Test from photos</p>
+        {props.photo.map((photos, index) => {
           <div key={index}>
-            <img src={props.photo} />
+            <img src={photos.src.small} />
           </div>;
         })}
       </div>
