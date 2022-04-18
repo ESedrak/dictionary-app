@@ -1,18 +1,18 @@
 import React from "react";
+import { Row, Col } from "react-bootstrap";
 
 export default function Photos(props) {
   // console log props.photos for the data
-  console.log(props.photo[0].src.small);
-  if (props.photo) {
+  console.log(props.photos);
+  if (props.photos) {
     return (
-      <div className="Photos">
-        <p>Test from photos</p>
-        {props.photo.map((photos, index) => {
-          <div key={index}>
-            <img src={photos.src.small} />
-          </div>;
+      <Row className="Photos">
+        {props.photos.map(function (photo, index) {
+          <Col key={index}>
+            <img src={photo.src.small} alt="photos" />
+          </Col>;
         })}
-      </div>
+      </Row>
     );
   } else {
     return null;
