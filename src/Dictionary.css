@@ -16,7 +16,7 @@
   background-color: #1a1a1c;
   margin: 0 auto;
   margin-bottom: 50px;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: white;
@@ -31,28 +31,4 @@
   transform: scale(1.1);
   color: rgb(255, 207, 215);
   box-shadow: 10px 20px 40px black;
-}
-
-.Meaning .definition {
-  font-size: 17px;
-}
-
-.Meaning .example {
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-.Meaning .partOfSpeech {
-  padding-bottom: 22px;
-  text-transform: capitalize;
-}
-
-.Phonetics .audio {
-  display: block;
-  text-align: right;
-}
-
-.Results .wordSearched {
-  text-transform: capitalize;
-  text-align: center;
 }

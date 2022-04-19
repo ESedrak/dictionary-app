@@ -1,5 +1,6 @@
 import React from "react";
 import Synonym from "./Synonym";
+import "./Meaning.css";
 
 export default function Meaning(props) {
   // console.log(props.meaning) to show data on partOfSpeech/definitions/examples and synonyms;

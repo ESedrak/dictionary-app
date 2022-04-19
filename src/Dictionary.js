@@ -28,7 +28,7 @@ export default function Dictionary() {
 
     const apiKeyPhotos =
       "563492ad6f917000010000016cea332a7bd443d7b79039d1069a6ad3";
-    const apiUrlPhotos = `https://api.pexels.com/v1/search?query=${keyword}`;
+    const apiUrlPhotos = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
 
     // // Authorisation using : const headers = { Authorization: `Bearer ${token}` };
     // axios.get(URLConstants.USER_URL, { headers });

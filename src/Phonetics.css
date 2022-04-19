@@ -1,0 +1,8 @@
+.Phonetics {
+  margin-bottom: 5px;
+}
+
+.Phonetics .audio {
+  display: block;
+  text-align: right;
+}
