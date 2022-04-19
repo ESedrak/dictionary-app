@@ -9,8 +9,8 @@ import Container from "react-bootstrap/Container";
 // Components should be followed as below (helps understand the structure of the app)
 // 1. App
 // 2.Dictionary
-// 3.Results
-// 4. Both Phonetics and Meaning
+// 3.Results and Photos
+// 4. Phonetics and Meaning - Both in Results
 // 5. Footer
 
 ReactDOM.render(

@@ -1,0 +1,13 @@
+.Meaning .definition {
+  font-size: 17px;
+}
+
+.Meaning .example {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.Meaning .partOfSpeech {
+  padding-bottom: 22px;
+  text-transform: capitalize;
+}
