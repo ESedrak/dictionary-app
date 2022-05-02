@@ -1,5 +1,8 @@
-.Synonym li {
-  display: inline-block;
-  margin: 10px 5px;
+.Synonym span {
+  margin: 0 auto;
   font-size: 13px;
+  border: 2px solid white;
+  margin: 0 2px;
+  padding: 5px;
+  border-radius: 5px;
 }
