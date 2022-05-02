@@ -5,15 +5,15 @@ export default function Synonym(props) {
   // console.log(props.synonyms) to show the synonyms data in an array;
   if (props.synonyms) {
     return (
-      <div className="Synonym">
+      <ul className="Synonym">
         {props.synonyms.map((synonym, index) => {
           return (
-            <span key={index}>
+            <li key={index}>
               <strong>{synonym}</strong>
-            </span>
+            </li>
           );
         })}
-      </div>
+      </ul>
     );
   } else {
     return null;
