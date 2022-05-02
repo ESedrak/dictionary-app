@@ -1,8 +1,12 @@
 .Synonym li {
-  display: inline-block;
   font-size: 13px;
   border: 2px solid white;
   margin: 5px 5px;
   padding: 5px;
   border-radius: 5px;
+  display: inline-block;
+}
+
+.Synonym {
+  text-align: center;
 }
