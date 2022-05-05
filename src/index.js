@@ -10,7 +10,7 @@ import Container from "react-bootstrap/Container";
 // 1. App
 // 2.Dictionary
 // 3.Results and Photos
-// 4. Phonetics and Meaning - Both in Results
+// 4. (Results) Phonetics and Meaning
 // 5. Footer
 
 ReactDOM.render(
