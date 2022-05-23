@@ -6,13 +6,13 @@ const Meaning = (props) => {
   // console.log(props.meaning) to show data on partOfSpeech/definitions/examples and synonyms;
   return (
     <div className="Meaning">
-      <h3 className="partOfSpeech">{props.meaning.partOfSpeech}</h3>
+      <h3 className="Meaning-partOfSpeech">{props.meaning.partOfSpeech}</h3>
       {props.meaning.definitions.map((definition, index) => {
         return (
           <div key={index}>
-            <p className="definition">{definition.definition}</p>
+            <p className="Meaning-definition">{definition.definition}</p>
             <em>
-              <p className="example">{definition.example}</p>
+              <p className="Meaning-example">{definition.example}</p>
             </em>
             <br />
           </div>
