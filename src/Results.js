@@ -3,7 +3,7 @@ import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
 import "./Results.css";
 
-export default function Results(props) {
+const Results = (props) => {
   // console.log(props.results) to see the data received (from Dictionary) - shows phonetics/meanings;
   if (props.results) {
     return (
@@ -35,4 +35,6 @@ export default function Results(props) {
   } else {
     return null;
   }
-}
+};
+
+export default Results;

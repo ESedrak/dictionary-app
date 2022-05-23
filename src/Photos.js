@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import "./Photos.css";
 
-export default function Photos(props) {
+const Photos = (props) => {
   // console log props.photos for the data
   if (props.photos) {
     return (
@@ -23,4 +23,6 @@ export default function Photos(props) {
   } else {
     return null;
   }
-}
+};
+
+export default Photos;

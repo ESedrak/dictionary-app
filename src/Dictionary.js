@@ -4,7 +4,7 @@ import Results from "./Results";
 import "./Dictionary.css";
 import Photos from "./Photos";
 
-export default function Dictionary() {
+const Dictionary = () => {
   const [keyword, setKeyword] = useState(null);
   const [results, setResults] = useState(null);
   const [photo, setPhoto] = useState(null);
@@ -66,4 +66,6 @@ export default function Dictionary() {
       <Photos photos={photo} />
     </div>
   );
-}
+};
+
+export default Dictionary;

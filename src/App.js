@@ -2,7 +2,7 @@ import "./App.css";
 import Dictionary from "./Dictionary";
 import Footer from "./Footer";
 
-export default function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -16,4 +16,6 @@ export default function App() {
       </footer>
     </div>
   );
-}
+};
+
+export default App;

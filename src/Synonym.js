@@ -1,7 +1,7 @@
 import React from "react";
 import "./Synonym.css";
 
-export default function Synonym(props) {
+const Synonym = (props) => {
   // console.log(props.synonyms) to show the synonyms data in an array;
   if (props.synonyms) {
     return (
@@ -18,4 +18,6 @@ export default function Synonym(props) {
   } else {
     return null;
   }
-}
+};
+
+export default Synonym;

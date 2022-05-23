@@ -4,7 +4,7 @@ import PlayAudio from "react-simple-audio-player";
 import chroma from "chroma-js";
 import "./Phonetics.css";
 
-export default function Phonetics(props) {
+const Phonetics = (props) => {
   // console.log(props.phonetic) to show data audio/text;
   const colorScale = chroma.scale(["#565a63", "#ffffff"]).mode("lch").colors(5);
   //imported a simple audio player - can change color via chroma.scale
@@ -22,4 +22,6 @@ export default function Phonetics(props) {
       </Row>
     </div>
   );
-}
+};
+
+export default Phonetics;
