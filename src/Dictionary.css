@@ -1,11 +1,11 @@
-.Dictionary input {
+.Dictionary-search {
   line-height: 33px;
   position: relative;
   top: 2px;
   width: auto;
 }
 
-.Dictionary .searchBar {
+.Dictionary-searchBar {
   text-align: center;
   padding: 19px;
   display: block;

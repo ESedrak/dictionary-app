@@ -23,6 +23,7 @@ const Dictionary = () => {
   const handleSearch = (e) => {
     e.preventDefault();
 
+    /* documentation  https://api.dictionaryapi.dev/api/v2/entries/en/<word>*/
     const apiUrlDictionary = ` https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     axios.get(apiUrlDictionary).then(handleKeywordSearch);
 
@@ -30,9 +31,8 @@ const Dictionary = () => {
       "563492ad6f917000010000016cea332a7bd443d7b79039d1069a6ad3";
     const apiUrlPhotos = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
 
-    // // Authorisation using : const headers = { Authorization: `Bearer ${token}` };
-    // axios.get(URLConstants.USER_URL, { headers });
-
+    /*Authorisation using : const headers = { Authorization: `Bearer ${token}` };
+     axios.get(URLConstants.USER_URL, { headers }); */
     const headers = { Authorization: `Bearer ${apiKeyPhotos}` };
     axios.get(apiUrlPhotos, { headers }).then(handlePhotos);
   };
@@ -46,11 +46,12 @@ const Dictionary = () => {
     <div className="Dictionary">
       <section>
         <form onSubmit={handleSearch}>
-          <span className="searchBar">
+          <span className="Dictionary-searchBar">
             <input
               type="search"
               onChange={keywordChange}
               placeholder="Search for a word  "
+              className="Dictionary-search"
             ></input>
             <button
               type="button"
