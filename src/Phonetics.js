@@ -6,8 +6,10 @@ import "./Phonetics.css";
 
 const Phonetics = (props) => {
   // console.log(props.phonetic) to show data audio/text;
-  const colorScale = chroma.scale(["#565a63", "#ffffff"]).mode("lch").colors(5);
+
   //imported a simple audio player - can change color via chroma.scale
+  const colorScale = chroma.scale(["#565a63", "#ffffff"]).mode("lch").colors(5);
+
   return (
     <div className="Phonetics">
       <Row>
