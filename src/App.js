@@ -5,8 +5,8 @@ import Footer from "./Footer";
 const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Dictionary</h1>
+      <header>
+        <h1 className="App-header">Dictionary</h1>
       </header>
       <main>
         <Dictionary />
