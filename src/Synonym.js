@@ -8,7 +8,7 @@ const Synonym = (props) => {
       <ul className="Synonym">
         {props.synonyms.map((synonym, index) => {
           return (
-            <li key={index}>
+            <li key={index} className="Synonym-list">
               <strong>{synonym}</strong>
             </li>
           );

@@ -1,4 +1,8 @@
-.Synonym li {
+.Synonym {
+  text-align: center;
+}
+
+.Synonym-list {
   font-size: 13px;
   border: 2px solid white;
   margin: 5px 5px;
@@ -6,8 +10,4 @@
   border-radius: 5px;
   display: inline-block;
   text-transform: capitalize;
-}
-
-.Synonym {
-  text-align: center;
 }
