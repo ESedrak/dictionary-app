@@ -13,7 +13,7 @@ const Phonetics = (props) => {
   return (
     <div className="Phonetics">
       <Row>
-        <Col className="audio">
+        <Col className="Phonetics-audio">
           <PlayAudio
             url={props.phonetic.audio}
             colorScale={colorScale}

@@ -8,6 +8,7 @@ const Footer = () => {
         href="https://github.com/ESedrak/dictionary-app"
         target="_blank"
         rel="noreferrer"
+        className="Footer-link"
       >
         Open Source Code By Elizabeth Sedrak
       </a>

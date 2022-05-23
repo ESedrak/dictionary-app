@@ -1,4 +1,4 @@
-.Footer a {
+.Footer-link {
   text-decoration-line: none;
   color: white;
   display: block;
@@ -7,6 +7,6 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.Footer a:hover {
+.Footer-link:hover {
   color: rgb(255, 202, 202);
 }
