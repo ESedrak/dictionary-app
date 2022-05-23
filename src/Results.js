@@ -4,12 +4,12 @@ import Phonetics from "./Phonetics";
 import "./Results.css";
 
 const Results = (props) => {
-  // console.log(props.results) to see the data received (from Dictionary) - shows phonetics/meanings;
+  // console.log(props.results) to see the data received (from Dictionary) - shows API data
   if (props.results) {
     return (
       <div className="Results">
         <section>
-          <h2 className="wordSearched">{props.results.word}</h2>
+          <h2 className="Results-wordSearched">{props.results.word}</h2>
           {/* Had to filter phonetics as there was empty strings showing up which uploaded the original site again */}
           {props.results.phonetics
             .filter((phonetic) => {
