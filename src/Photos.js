@@ -12,7 +12,11 @@ const Photos = (props) => {
             return (
               <Col sm={4} key={index}>
                 <a href={photo.src.original} target="_blank" rel="noreferrer">
-                  <img src={photo.src.landscape} alt="" />
+                  <img
+                    src={photo.src.landscape}
+                    alt={photo.alt}
+                    className="Photos-img"
+                  />
                 </a>
               </Col>
             );
